@@ -17,12 +17,6 @@ module.exports = (params) => {
     inputDatasetName: null,
     ...params
   };
-
-  // TODO: What does this do?
-  const {
-    defaultConfig,
-    logsSchema
-  } = params;
   
   // Add a declaration for source data
   const inputData = declare({
