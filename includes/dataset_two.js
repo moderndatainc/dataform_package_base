@@ -9,6 +9,6 @@ module.exports = (params) => {
 select
   *
 from 
-  ${params.segmentSchema, ctx.ref("dataset_one")}
+  ${params.segmentSchema, ctx.ref(defaultConfig.database, defaultConfig.schema, "dataset_one")}
 `)
 }
